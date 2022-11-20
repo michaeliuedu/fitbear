@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="#F7FFF7"
+tools:context="gg.bear.fitness.SignInActivity">
+
+
+<TextView
+    android:id="@+id/login_title"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="WEIGHT TRACK"
+    android:textSize="50dp"
+    android:textStyle="bold"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintRight_toRightOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="0.024" />
+
+<TextView
+
+    android:id="@+id/login_desc"
+    android:layout_width="311dp"
+    android:layout_height="57dp"
+    android:fontFamily="@font/helvetica"
+    android:text="Keep track of your weekly weight gains or losses"
+    android:textSize="15dp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintRight_toRightOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="0.123" />
+
+<Button
+    android:id="@+id/addWeightButton"
+    android:layout_width="223dp"
+    android:layout_height="45dp"
+    android:backgroundTint="#4ECDC4"
+    android:fontFamily="@font/helvetica"
+    android:text="Update Weight"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintHorizontal_bias="0.484"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintRight_toRightOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="0.963" />
+
+    <com.github.mikephil.charting.charts.BarChart
+        android:id="@+id/barChartWeight"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_marginTop="28dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.415" />
+
+    <EditText
+        android:id="@+id/newWeight"
+        android:layout_width="370dp"
+        android:layout_height="78dp"
+        android:ems="10"
+        android:fontFamily="@font/helvetica"
+        android:hint="Weight (lbs)"
+        android:inputType="number"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.634"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.863" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
